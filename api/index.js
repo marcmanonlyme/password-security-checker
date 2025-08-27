@@ -1,7 +1,7 @@
 const { app } = require('@azure/functions');
 
-// Import all function handlers
-require('./check-breach');
+// Entry point for Azure Functions v4
+// Currently using client-side password checking with Pwned Passwords API
+// No server-side functions required
 
-// The app is automatically configured by importing the function files
-// No additional setup needed for v4 programming model
+console.log('Azure Functions app initialized');
