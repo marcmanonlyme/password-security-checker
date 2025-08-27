@@ -1,0 +1,21 @@
+{
+  "name": "breach-lookup-api",
+  "version": "1.0.0",
+  "description": "Azure Functions backend for Breach Lookup app",
+  "main": "index.js",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "azure-functions",
+    "hibp",
+    "security"
+  ],
+  "author": "",
+  "license": "MIT"
+}

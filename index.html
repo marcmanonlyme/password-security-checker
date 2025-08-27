@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Security Checker - Check Password Breaches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="Password Security Checker Logo" class="logo">
+            <h1>🔐 Password Security Checker</h1>
+            <p>Check if your password has been compromised in data breaches</p>
+        </header>
+            <img src="images/logo.png" alt="Password Security Checker Logo" class="logo">
+            <h1>Password Security Checker</h1>
+            <p>Check if your password has been compromised in data breaches</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <div class="input-group">
+                    <input 
+                        type="password" 
+                        id="passwordInput" 
+                        placeholder="Enter your password to check security"
+                        required
+                    >
+                    <button id="togglePassword" class="toggle-btn" onclick="togglePasswordVisibility()" title="Show/Hide Password">
+                        👁️
+                    </button>
+                    <button id="checkButton" onclick="checkPassword()">
+                        <span id="buttonText">Check Password</span>
+                        <div id="loadingSpinner" class="spinner hidden"></div>
+                    </button>
+                </div>
+                
+                <div class="demo-passwords">
+                    <p><strong>🧪 Test These Common Passwords:</strong></p>
+                    <div class="demo-buttons">
+                        <button class="demo-btn" onclick="testPassword('password123')">password123</button>
+                        <button class="demo-btn" onclick="testPassword('123456')">123456</button>
+                        <button class="demo-btn" onclick="testPassword('MySecureP@ssw0rd!')">Strong Password</button>
+                    </div>
+                    <p class="demo-note">💡 Your password is processed securely using k-anonymity - we never see your actual password!</p>
+                </div>
+            </div>
+
+            <div id="results" class="results hidden">
+                <div id="resultsContent"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://haveibeenpwned.com/Passwords" target="_blank">Have I Been Pwned</a> Pwned Passwords API</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
